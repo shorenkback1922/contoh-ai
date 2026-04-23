@@ -1,0 +1,47 @@
+Buatkan issue.md yang berisi perencanaan untuk nanti di implementasikan oleh junior progammer atau ai model yang lebih murah.
+
+Isi dari planning nya adalah sebagai berikut :
+
+buat table user:
+id integer auto increment
+name varchar 255 not null
+email varchar 255 not null
+password varchar 255 not null(password merupakan
+hash dari bcrypt)
+create_at timestamp default current_timestamp
+
+Buatkan API untuk regristasi user baru
+
+Endpoint : POST /api/users
+
+Request body :
+{
+    "name": "David",
+    "email": "david@localhost",
+    "password": "rahasia"
+}
+
+Response body (Succes) :
+{
+    "data": "Ok"
+}
+
+Response body (Error)\
+{
+    "error": "Email sudah terdaftar"
+}
+
+Struktur folder di dalam src
+- routes : ini berisi routing elysia js
+- services : ini berisi logic bisnis aplikasi
+
+Struktur file
+- routes : menggunakan format misal users-route.ts
+- services : menggunakan format misal users-service.ts
+
+Jelaskan step tahapan-tahapan yang harus di lakukan untuk 
+mengimplementasikan fitur ini, anggap nanti yang mengimplementasikan 
+adalah junior progammer atau model AI yang lebih murah.
+
+Pastikan setiap step menggunakan markdown yang mudah di baca.
+
